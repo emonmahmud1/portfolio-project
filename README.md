@@ -4,7 +4,7 @@ A modern and responsive personal portfolio website built with React, Tailwind CS
 
 ## 🚀 Live Preview
 
-🔗 [View Live Site](https://your-live-link.com)
+🔗 [View Live Site](https://project-raintor.netlify.app/)
 
 ---
 
