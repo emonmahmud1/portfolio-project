@@ -1,15 +1,16 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useEffect, useRef } from "react";
 import UserCard from "../../components/UserCard";
+import SectionTitle from "../../components/SectionTitle";
 
 const UserFeed = () => {
-  const fetchUsers = async () => {
+  const fetchUsers = async ({ pageParam = 0 }) => {
     const response = await fetch(
-      `https://tech-test.raintor.com/api/users/GetUsersList?take=10&skip=0`
+      `https://proxy-server-users.vercel.app/users?take=10&skip=${pageParam}`
     );
     return response.json();
   };
-  // Use React Query to handle paginated fetching
+ 
   const {
     data,
     fetchNextPage,
@@ -63,12 +64,14 @@ const UserFeed = () => {
       }}
       
     >
-      <h2 className="text-2xl font-bold text-center mb-6">User Feed</h2>
+        <div className="pl-4">
+          <SectionTitle title="All Users" color="text-black" />
+        </div>
 
-      {/* Loop through each page and each user */}
+   
       {data.pages.map((page, pageIndex) => (
         <div key={pageIndex}>
-          {page.users.map((user) => (
+          {page?.users?.map((user) => (
             <UserCard key={user.id} user={user} />
           ))}
         </div>
