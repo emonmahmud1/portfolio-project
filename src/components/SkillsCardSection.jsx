@@ -39,7 +39,7 @@ const SkillsCardSection = () => {
         className=""
       >
         {skills?.map((skill, index) => (
-            <SwiperSlide key={index} className="!w-fit hover:rotate-5 ">
+            <SwiperSlide key={index} className="!w-fit">
                 <SkillCard
                 logo={skill.icon}
                 cardTitle={skill.title}

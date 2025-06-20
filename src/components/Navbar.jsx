@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -51,8 +52,11 @@ const Navbar = () => {
             <li>
               <a>Blog</a>
             </li>
+
           </ul>
-          <a className="btn">Button</a>
+          <div>
+            <Button btntxt="Start Project" />
+          </div>
         </div>
         {/* <div className="navbar-end">
         </div> */}
