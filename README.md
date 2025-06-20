@@ -64,7 +64,7 @@ Now open your browser and go to:
 
 ---
 
-## 🔄 Features
+## 🔄 User Feed
 
 * Built using TanStack React Query
 * Automatically loads more users as you scroll down
@@ -72,6 +72,13 @@ Now open your browser and go to:
 * Uses IntersectionObserver for efficient infinite loading
 
 ---
+## 🌐 APIs Used
+
+🟡 Original API (has CORS restrictions):  
+https://tech-test.raintor.com/api/users/GetUsersList?take=10&skip=0
+
+🟢 Proxy API (CORS-safe, use this in frontend):  
+https://proxy-server-users.vercel.app/users
 
 ## 🧑‍💻 Author
 
