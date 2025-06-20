@@ -15,6 +15,7 @@ A modern and responsive personal portfolio website built with React, Tailwind CS
 * **Tailwind CSS**
 * **DaisyUI**
 * **Swiper.js**
+* **TanStack React Query**
 
 ---
 
@@ -59,6 +60,16 @@ Now open your browser and go to:
 * Smooth animations with Swiper.js
 * Clean UI with DaisyUI & Tailwind
 * Route navigation using React Router
+* Infinite Scroll User Feed using TanStack React Query
+
+---
+
+## 🔄 Features
+
+* Built using TanStack React Query
+* Automatically loads more users as you scroll down
+* Displays user profile cards with name, job title, email, and more
+* Uses IntersectionObserver for efficient infinite loading
 
 ---
 
