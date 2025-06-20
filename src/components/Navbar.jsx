@@ -36,6 +36,7 @@ const Navbar = () => {
             <li>
               <Link to='users'>Users</Link>
             </li>
+            <li><ToggleTheme /></li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl uppercase">Develop.me</a>
