@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { IoCallOutline, IoMailOpenOutline } from "react-icons/io5";
 import Button from "../../components/Button";
@@ -7,21 +6,10 @@ import SectionTitle from "../../components/SectionTitle";
 import SkillsCardSection from "../../components/SkillsCardSection";
 import WorkProcessCard from "../../components/WorkProcessCard";
 import { SiMinutemailer } from "react-icons/si";
-import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
-    <div
-      className="max-w-[1440px] mx-auto"
-      style={{
-        backgroundImage: `url('./images/bgimg.png')`,
-        backgroundRepeat: "repeat-y",
-      }}
-    >
-      <div className="sticky top-0 z-50">
-        <Navbar />
-      </div>
-
+    <>
       {/* Banner */}
       <div className="relative top-0 lg:h-[680px] h-lvh mb-20">
         <div className="lg:w-2/3 absolute mt-20 md:ml-15">
@@ -202,11 +190,7 @@ const Home = () => {
         </div>
       </div>
       {/* end contact */}
-      {/* Footer */}
-      <div className="mt-10">
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 };
 
