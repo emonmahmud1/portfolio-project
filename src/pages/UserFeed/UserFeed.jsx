@@ -65,7 +65,7 @@ const UserFeed = () => {
       
     >
         <div className="pl-4">
-          <SectionTitle title="All Users" color="text-black" />
+          <SectionTitle title="All Users" color="text-black dark:text-gray-100" />
         </div>
 
    

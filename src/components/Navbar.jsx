@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { Link } from "react-router";
+import ToggleTheme from './ToggleTheme';
 
 const Navbar = () => {
   return (
@@ -48,6 +49,9 @@ const Navbar = () => {
               <Link to='users'>Users</Link>
             </li>
           </ul>
+          <div>
+          <ToggleTheme />
+          </div>
           <div>
             <Button btntxt="Start Project" />
           </div>

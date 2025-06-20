@@ -84,7 +84,7 @@ const Home = () => {
       {/* about me */}
       <div className="p-5 md:p-10">
         <div className="flex justify-end">
-          <SectionTitle title="About" color="text-black" />
+          <SectionTitle title="About" color="text-black dark:text-gray-100" />
         </div>
         <div className="max-w-4xl ml-auto text-right">
           <h1 className="text-2xl md:text-6xl lg:7xl leading-[1.5] font-semibold">
@@ -136,7 +136,7 @@ const Home = () => {
       {/* contact */}
       <div className="p-5 md:p-10">
         <div className="">
-          <SectionTitle title="Contact" color="text-black" />
+          <SectionTitle title="Contact" color="text-black dark:text-gray-100" />
         </div>
         <div className="flex flex-col md:flex-row gap-4 justify-between">
           <div className="w-full md:w-1/2">
